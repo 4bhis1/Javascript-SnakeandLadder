@@ -1,0 +1,157 @@
+body{
+    display: flex;
+    overflow-y: hidden;
+}
+
+#gridContainer{
+    display: grid;
+    grid-template-columns: repeat(10,80px);
+    grid-area: auto;
+    grid-gap: 2px;
+    background-color: #c0c0c0;
+    width: min-content;
+    padding: 5px;
+}
+
+#gridContainer > div{
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 60px;
+    width: 60px;
+}
+
+#gridContainer > div:hover{
+    cursor: pointer;
+   
+}
+
+#snakes{
+    display: flex;
+    position:absolute;
+}
+
+#ladder1{
+    height: 503px;
+    width: 498px;
+    transform: rotate(24deg);
+    position: absolute;
+    opacity: 0.7;
+}
+
+#ladder2{
+    height: 808px;
+    width: 478px;
+    transform: rotate(132deg);
+    position: absolute;
+    left: 127px;
+    opacity: 0.7;
+}
+
+#ladder3{
+    height: 754px;
+    width: 544px;
+    transform: rotate(29deg);
+    position: absolute;
+    top: 121px;
+    left: 137px;
+    opacity: 0.7;
+}
+
+#snake1{
+    height: 598px;
+    width: 544px;
+    transform: rotate(33deg);
+    position: absolute;
+    top: 143px;
+    left: 330px;
+    opacity: 0.7;
+}
+
+#snake2{
+    height: 813px;
+    width: 596px;
+    transform: rotate(338deg);
+    position: absolute;
+    top: -55px;
+    opacity: 0.7;
+}
+
+#controller{
+    border: 2px solid black;
+    position: absolute;
+    top: 370px;
+    right: 80px;
+    height: 400px;
+    width: 500px;
+}
+
+#diceButton{
+    height: 150px;
+    width: 150px;
+    background-color: antiquewhite;
+    position: relative;
+    top: 40px;
+    left: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#diceButton:hover {
+    cursor: pointer;
+}
+
+#chance{
+    padding: 20px;
+}
+
+#score{
+    padding: 20px;
+}
+
+#comment{
+    padding: 20px;
+}
+
+#redPlayerCoin{
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    top: 759px;
+    left: -60px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+#greenPlayerCoin{
+    background-color: green;
+    height: 20px;
+    width: 20px;
+    top: 759px;
+    left: -30px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+#bluePlayerCoin{
+    background-color: blue;
+    height: 20px;
+    width: 20px;
+    top: 789px;
+    left: -60px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+#yellowPlayerCoin{
+    background-color: yellow;
+    height: 20px;
+    width: 20px;
+    top: 789px;
+    left: -30px;
+    border-radius: 10px;
+    position: absolute;
+}
